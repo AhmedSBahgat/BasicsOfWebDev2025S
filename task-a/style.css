@@ -1,0 +1,17 @@
+/*
+Author: Ahmed Bahgat
+Date: 2025-09-07
+*/
+
+body {
+  background-color: #f0f8ff; /* light blue */
+}
+
+h1 {
+  color: #003366; /* dark blue */
+  font-size: 36px;
+}
+
+p {
+  color: #800000; /* dark red */
+}
