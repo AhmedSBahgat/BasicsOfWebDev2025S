@@ -1,0 +1,53 @@
+/*
+Author: Ahmed Bahgat
+Date: 2025-09-17
+*/
+
+body {
+    background-color: #f0f4f8; 
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    line-height: 1.6;
+}
+
+
+h1 {
+    color: #2a4d69;
+    font-size: 2.5em;
+    text-align: center;
+}
+
+h2 {
+    color: #4b86b4;
+    font-size: 1.8em;
+    margin-top: 20px;
+}
+
+/* Paragraph text */
+p {
+    color: #333333;
+    font-size: 1.1em;
+}
+
+/* Lists */
+ul {
+    list-style-type: square;
+    margin-left: 20px;
+}
+
+ol {
+    list-style-type: decimal-leading-zero;
+    margin-left: 20px;
+}
+
+/* Links */
+a {
+    color: #d94f04;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #ff6600;
+    text-decoration: underline;
+}
