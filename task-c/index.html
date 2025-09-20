@@ -1,0 +1,59 @@
+<!--
+Author: Ahmed Bahgat
+Date: 2025-09-20
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Multimedia Showcase</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>My Multimedia Showcase</h1>
+
+  <!-- Image Section -->
+  <section>
+    <h2>Creative Commons Image</h2>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Fronalpstock_big.jpg/640px-Fronalpstock_big.jpg" 
+         alt="Mountain landscape with clouds and sun">
+  </section>
+
+  <!-- Audio Section -->
+  <section>
+    <h2>Creative Commons Audio</h2>
+    <audio controls>
+      <!-- MP3 version for Chrome/Edge/Safari -->
+      <source src="https://archive.org/download/testmp3testfile/mpthreetest.mp3" type="audio/mpeg">
+      <!-- OGG fallback -->
+      <source src="https://upload.wikimedia.org/wikipedia/commons/4/41/Wind_in_the_trees.ogg" type="audio/ogg">
+      Your browser does not support the audio element.
+    </audio>
+  </section>
+
+  <!-- Video Section -->
+  <section>
+    <h2>Creative Commons Video</h2>
+    <video controls width="500">
+      <!-- MP4 version (most compatible) -->
+      <source src="https://archive.org/download/BigBuckBunny_328/BigBuckBunny_512kb.mp4" type="video/mp4">
+      <!-- WebM fallback -->
+      <source src="https://upload.wikimedia.org/wikipedia/commons/transcoded/b/bc/Big_Buck_Bunny_Trailer_400p.ogv/Big_Buck_Bunny_Trailer_400p.ogv.360p.webm" type="video/webm">
+      Your browser does not support the video tag.
+    </video>
+  </section>
+
+  <!-- Licensing Info -->
+  <section>
+    <p>
+      All media shown on this page is sourced from 
+      <a href="https://commons.wikimedia.org/" target="_blank">Wikimedia Commons</a> 
+      and <a href="https://archive.org/" target="_blank">Internet Archive</a> 
+      under Creative Commons or public domain licenses.  
+      The image, audio, and video are free to use with proper attribution.
+    </p>
+  </section>
+</body>
+</html>

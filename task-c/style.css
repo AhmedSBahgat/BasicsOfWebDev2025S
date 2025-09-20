@@ -1,0 +1,41 @@
+/*
+Author: Ahmed Bahgat
+Date: 2025-09-20
+*/
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  background-color: #fafafa;
+  color: #333;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+section {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+img {
+  width: 100%;
+  max-width: 500px;
+  display: block;
+  margin: auto;
+  border-radius: 8px;
+}
+
+audio, video {
+  display: block;
+  margin: 15px auto;
+}
+
+p {
+  text-align: center;
+  font-size: 1rem;
+}
