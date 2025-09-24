@@ -1,0 +1,67 @@
+/*
+Author: Ahmed Bahgat
+Date: 2025-09-24
+*/
+
+/* Element selectors */
+h1 {
+    color: darkblue;
+    font-size: 2em;
+}
+h2 {
+    color: darkslateblue;
+    font-size: 1.5em;
+}
+h3 {
+    color: darkcyan;
+    font-size: 1.2em;
+}
+p {
+    font-size: 1em;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+/* Class selectors */
+.box {
+    background-color: #f0f8ff;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+.highlight {
+    background-color: #fffacd;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+/* ID selector */
+#special-message {
+    color: darkgreen;
+    font-weight: bold;
+}
+
+/* Group selector */
+h1, h2, h3 {
+    font-family: Arial, sans-serif;
+    margin-bottom: 10px;
+}
+
+/* Descendant selector */
+section ul li {
+    color: darkred;
+    list-style-type: square;
+}
+
+/* Attribute selectors */
+a[target="_blank"] {
+    color: darkorange;
+    text-decoration: underline;
+}
+img[alt] {
+    width: 150px;
+    border: 2px solid #000;
+    display: block;
+    margin-top: 10px;
+}
