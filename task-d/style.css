@@ -1,67 +1,79 @@
-/*
-Author: Ahmed Bahgat
-Date: 2025-09-24
-*/
-
 /* Element selectors */
 h1 {
     color: darkblue;
-    font-size: 2em;
-}
-h2 {
-    color: darkslateblue;
-    font-size: 1.5em;
-}
-h3 {
-    color: darkcyan;
-    font-size: 1.2em;
-}
-p {
-    font-size: 1em;
-    line-height: 1.5;
-    margin-bottom: 10px;
+    text-align: center;
 }
 
-/* Class selectors */
-.box {
-    background-color: #f0f8ff;
-    padding: 10px;
-    border: 1px solid #ccc;
-    margin-bottom: 10px;
+h2 {
+    color: darkgreen;
 }
-.highlight {
-    background-color: #fffacd;
-    padding: 10px;
-    border: 1px solid #ccc;
-    margin-bottom: 10px;
+
+h3 {
+    color: darkred;
+}
+
+p {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
 }
 
 /* ID selector */
 #special-message {
-    color: darkgreen;
     font-weight: bold;
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-left: 4px solid darkblue;
+}
+
+/* Class selectors */
+.box {
+    border: 2px solid green;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.highlight {
+    background-color: yellow;
+    padding: 10px;
+    margin: 10px 0;
 }
 
 /* Group selector */
 h1, h2, h3 {
-    font-family: Arial, sans-serif;
-    margin-bottom: 10px;
+    font-family: 'Verdana', sans-serif;
 }
 
 /* Descendant selector */
 section ul li {
-    color: darkred;
     list-style-type: square;
+    margin-left: 20px;
 }
 
 /* Attribute selectors */
 a[target="_blank"] {
-    color: darkorange;
-    text-decoration: underline;
+    color: red;
+    text-decoration: none;
 }
+
 img[alt] {
-    width: 150px;
-    border: 2px solid #000;
     display: block;
     margin-top: 10px;
+    width: 100px;
+}
+
+/* Pseudo-class selectors */
+ul li:first-child {
+    color: purple;
+}
+
+ul li:last-child {
+    font-style: italic;
+}
+
+/* Section styling */
+section {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin-top: 20px;
+    background-color: #f9f9f9;
 }
