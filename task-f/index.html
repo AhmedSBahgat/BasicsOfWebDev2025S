@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Weekly Timetable — Task F</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <h1>Weekly Timetable</h1>
+  </header>
+
+  <main class="content" id="main">
+    <div class="top-grid">
+      <section class="student-info" aria-label="Student information">
+        <h2>Information</h2>
+        <p><strong class="label">Name:</strong> <span class="student-name">Ahmed Bahgat</span></p>
+        <p><strong class="label">Group:</strong> <span class="student-group">AITS24P</span></p>
+      </section>
+
+      <section class="controls" aria-label="Add course">
+        <h2>Add Course</h2>
+
+        <form id="addCourseForm">
+          <div class="form-row">
+            <label for="courseName">Course name</label>
+            <input id="courseName" name="courseName" type="text" required placeholder="e.g., Basics of web development" />
+          </div>
+
+          <fieldset class="days-group">
+            <legend>Days (yes = ✅ , no = ❌)</legend>
+            <label><input type="checkbox" name="day" value="Mon" /> Mon</label>
+            <label><input type="checkbox" name="day" value="Tue" /> Tue</label>
+            <label><input type="checkbox" name="day" value="Wed" /> Wed</label>
+            <label><input type="checkbox" name="day" value="Thu" /> Thu</label>
+            <label><input type="checkbox" name="day" value="Fri" /> Fri</label>
+          </fieldset>
+
+          <div class="form-row actions">
+            <button id="addRowBtn" type="submit" class="btn">Add row</button>
+            <button id="clearBtn" type="reset" class="btn btn-secondary">Clear</button>
+          </div>
+        </form>
+      </section>
+    </div>
+
+    <div class="table-wrap" aria-live="polite">
+      <table class="table" id="timetable" aria-label="Weekly class timetable">
+        <caption class="visually-hidden">Weekly timetable</caption>
+        <thead>
+          <tr>
+            <th scope="col">Course</th>
+            <th scope="col">Mon</th>
+            <th scope="col">Tue</th>
+            <th scope="col">Wed</th>
+            <th scope="col">Thu</th>
+            <th scope="col">Fri</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- intentionally empty by default: Add row will append rows here -->
+        </tbody>
+      </table>
+    </div>
+  </main>
+
+  <script src="index.js"></script>
+</body>
+</html>
