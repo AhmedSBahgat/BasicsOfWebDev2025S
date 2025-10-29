@@ -1,185 +1,161 @@
-/* Task F — palette applied */
-/* Do not change the five palette variables below */
-:root{
+/*
+Author: Ville Heikkiniemi
+Date: 2025-10-06
+*/
+
+/* 🎨 Required color palette */
+:root {
   --page-bg: #fcfdfc;
   --text: #2a2a2a;
   --brand: #6c4f8d;
   --table-alt: #f9f5ff;
   --border: #e0e0e0;
 
-  --base-size: 1rem;
-  --h1-size: 1.5rem;
-  --radius: 8px;
+  --radius: 12px;
 }
 
-/* Basic layout */
-* { box-sizing: border-box; }
-body{
-  margin:0;
-  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+/* Reset and base */
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
   background: var(--page-bg);
   color: var(--text);
-  -webkit-font-smoothing:antialiased;
-  -moz-osx-font-smoothing:grayscale;
-  line-height:1.4;
 }
 
 /* Header */
-.site-header{
+.site-header {
   background: var(--brand);
   color: #fff;
-  padding: 1rem 0;
   text-align: center;
-}
-.site-header h1{
-  margin:0;
-  font-size: var(--h1-size);
+  padding: 1.5rem 0;
 }
 
-/* Content container */
-.content{
-  max-width: 980px;
-  margin: 1.25rem auto;
-  padding: 0 1rem;
+.site-header h1 {
+  margin: 0;
+  font-size: 1.8rem;
 }
 
-/* Top grid: student info + controls */
-.top-grid{
+/* Layout */
+.content {
+  margin: 1.5rem 10%;
+}
+
+.top-grid {
   display: flex;
-  gap: 1rem;
-  margin-bottom: 1.25rem;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
 }
-.student-info,
-.controls{
+
+.student-info, .controls {
   background: #fff;
   border: 1px solid var(--border);
   border-radius: var(--radius);
   padding: 1rem;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
 }
 
-/* widths like reference: info smaller, controls larger */
-.student-info{ flex: 0 0 28%; min-width: 180px; }
-.controls{ flex: 1 1 72%; }
-
-/* Form styles */
-.form-row{ margin-top: 0.5rem; }
-.form-row label{ display:block; font-weight:600; margin-bottom:0.25rem; }
-input[type="text"]{
-  width:100%;
-  padding:0.45rem 0.6rem;
-  border-radius:6px;
-  border:1px solid var(--border);
+.student-info {
+  flex: 1 1 30%;
 }
 
-/* Days group */
-.days-group{
-  margin-top:0.75rem;
+.controls {
+  flex: 1 1 70%;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+/* Form styling */
+.form-row {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  margin: 0.5rem 0;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 0.4rem 0.6rem;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+}
+
+.days-group {
   border: 1px dashed var(--border);
-  padding: 0.5rem;
-  border-radius:6px;
-}
-.days-group label{
-  margin-right:0.5rem;
-  display:inline-flex;
-  align-items:center;
-  gap:0.35rem;
-  font-weight:500;
+  border-radius: 6px;
+  padding: 0.5rem 0.75rem;
+  margin-bottom: 1rem;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
 }
 
-/* Buttons */
-.actions{
-  margin-top:0.75rem;
-  display:flex;
-  gap:0.5rem;
-}
-.btn{
-  padding:0.45rem 0.8rem;
-  border-radius:6px;
-  border:none;
-  background:var(--brand);
-  color:#fff;
-  cursor:pointer;
-}
-.btn-secondary{
-  background:#fff;
-  color:var(--text);
-  border:1px solid var(--border);
+legend {
+  font-weight: 600;
+  color: var(--text);
 }
 
-/* Table wrapper + table */
-.table-wrap{
+.btn {
+  padding: 0.4rem 0.8rem;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: #fff;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: var(--table-alt);
+}
+
+.btn-secondary {
+  background: #f6f6f6;
+}
+
+/* Table styling */
+.table-wrap {
   background: #fff;
   border: 1px solid var(--border);
   border-radius: var(--radius);
-  padding: 0.5rem;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.04);
-}
-.table{
-  width:100%;
-  border-collapse:collapse;
-  overflow:hidden;
-  border-radius: var(--radius);
-}
-.table thead th{
-  background:var(--brand);
-  color:#fff;
-  text-align:center;
-  padding:0.75rem;
-  border-bottom:1px solid var(--border);
-}
-.table tbody td{
-  padding:0.9rem 0.6rem;
-  text-align:center;
-  border-bottom:1px solid var(--border);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  overflow-x: auto;
+  padding: 0;
 }
 
-/* course column left-aligned */
-.table tbody td:first-child,
-.table thead th:first-child{
-  text-align:left;
-  padding-left:1rem;
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table thead th {
+  background: var(--brand);
+  color: #fff;
+  text-align: left;
+  padding: 0.75rem;
+}
+
+.table tbody td {
+  border-top: 1px solid var(--border);
+  padding: 0.6rem 0.75rem;
+}
+
+.table tbody tr:nth-child(even) {
+  background: var(--table-alt);
+}
+
+.table th, .table td {
+  text-align: center;
+}
+
+.table th:first-child,
+.table td:first-child {
+  text-align: left;
   width: 40%;
 }
 
-/* alternate row color */
-.table tbody tr:nth-child(even){
-  background:var(--table-alt);
-}
-
-/* ✅ / ❌ mark styles */
-.mark{
-  font-size:1.2rem;
-  display:inline-block;
-  line-height:1;
-  padding:0.15rem 0.25rem;
-  border-radius:4px;
-}
-.mark.yes{
-  color:#0f6b2e;            /* green text for check */
-  background: rgba(15,107,46,0.06);
-}
-.mark.no{
-  color:#c43b5a;            /* red text for cross */
-  background: rgba(196,59,90,0.04);
-}
-
-/* visually hidden for caption etc */
-.visually-hidden{
-  position:absolute!important;
-  height:1px;width:1px;
-  overflow:hidden;clip:rect(1px,1px,1px,1px);
-  white-space:nowrap;border:0;padding:0;margin:-1px;
-}
-
-/* Responsive: stack top-grid on small screens */
-@media (max-width: 860px){
-  .top-grid{ flex-direction: column; }
-  .student-info{ order: 1; }
-  .controls{ order: 2; }
-}
-@media (max-width: 600px){
-  .content{ padding: 0 0.6rem; }
-  .table thead th, .table tbody td{ font-size:0.92rem; padding:0.6rem; }
-  .top-grid{ gap:0.6rem; }
+/* Responsive */
+@media (max-width: 768px) {
+  .top-grid {
+    flex-direction: column;
+  }
 }
