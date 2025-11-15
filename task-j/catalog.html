@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DriveEase Rentals – Catalog</title>
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body class="bg-gray-50 text-gray-800 font-['Open_Sans']">
+    <!-- Header -->
+    <header class="bg-blue-700 text-white py-6 shadow-md">
+      <div class="container mx-auto text-center">
+        <h1 class="text-3xl font-['Montserrat'] font-semibold">
+          DriveEase Rentals
+        </h1>
+        <p class="text-lg mt-2">Your Catalog of Reliable Rental Options</p>
+
+        <a
+          href="index.html"
+          class="underline text-yellow-300 hover:text-yellow-200 mt-2 text-sm inline-block"
+        >
+          ← Back to Home
+        </a>
+      </div>
+    </header>
+
+    <!-- Intro Section -->
+    <section class="container mx-auto px-6 py-12 text-center">
+      <h2 class="text-3xl font-bold text-blue-800 mb-4">Rental Catalog</h2>
+      <p class="max-w-2xl mx-auto">
+        Browse our selection of rental vehicles. All cars are well-maintained,
+        fuel-efficient, and available for flexible daily or weekly pricing.
+      </p>
+
+      <!-- Required Example Image -->
+      <div class="mt-8">
+        <img
+          src="example.jpg"
+          alt="Decorative catalog header example image"
+          class="mx-auto rounded-xl shadow-lg max-w-md"
+        />
+      </div>
+    </section>
+
+    <!-- Product Grid -->
+    <section class="container mx-auto px-6 pb-12">
+      <h3 class="text-2xl font-semibold text-blue-800 mb-6">
+        Available Rentals
+      </h3>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Compact Car -->
+        <article class="bg-white rounded-xl shadow-lg overflow-hidden">
+          <img
+            src="https://images.pexels.com/photos/170811/pexels-photo-170811.jpeg?auto=compress&cs=tinysrgb&w=800"
+            alt="Compact city car"
+            class="h-48 w-full object-cover"
+            loading="lazy"
+          />
+          <div class="p-4">
+            <h4 class="text-xl font-semibold mb-1">Compact Car</h4>
+            <p class="text-sm mb-2">
+              Easy to park, fuel-efficient, ideal for short trips.
+            </p>
+            <p class="text-blue-700 font-bold">39 €/d</p>
+          </div>
+        </article>
+
+        <!-- SUV -->
+        <article class="bg-white rounded-xl shadow-lg overflow-hidden">
+          <img
+            src="https://images.pexels.com/photos/14776592/pexels-photo-14776592.jpeg?auto=compress&cs=tinysrgb&w=800"
+            alt="Spacious white SUV"
+            class="h-48 w-full object-cover"
+            loading="lazy"
+          />
+          <div class="p-4">
+            <h4 class="text-xl font-semibold mb-1">SUV</h4>
+            <p class="text-sm mb-2">
+              Great for families and long trips, extra storage.
+            </p>
+            <p class="text-blue-700 font-bold">79 €/d</p>
+          </div>
+        </article>
+
+        <!-- Sport Car -->
+        <article class="bg-white rounded-xl shadow-lg overflow-hidden">
+          <img
+            src="https://images.pexels.com/photos/210019/pexels-photo-210019.jpeg?auto=compress&cs=tinysrgb&w=800"
+            alt="Sporty red car"
+            class="h-48 w-full object-cover"
+            loading="lazy"
+          />
+          <div class="p-4">
+            <h4 class="text-xl font-semibold mb-1">Sport Car</h4>
+            <p class="text-sm mb-2">
+              Performance vehicle for an exciting weekend drive.
+            </p>
+            <p class="text-blue-700 font-bold">129 €/d</p>
+          </div>
+        </article>
+
+        <!-- Passenger Van -->
+        <article class="bg-white rounded-xl shadow-lg overflow-hidden">
+          <img
+            src="https://images.pexels.com/photos/9143465/pexels-photo-9143465.jpeg?auto=compress&cs=tinysrgb&w=800"
+            alt="White van for group travel"
+            class="h-48 w-full object-cover"
+            loading="lazy"
+          />
+          <div class="p-4">
+            <h4 class="text-xl font-semibold mb-1">Passenger Van</h4>
+            <p class="text-sm mb-2">
+              Comfortable choice for group travel or moving.
+            </p>
+            <p class="text-blue-700 font-bold">99 €/d</p>
+          </div>
+        </article>
+
+        <!-- Luxury Sedan -->
+        <article class="bg-white rounded-xl shadow-lg overflow-hidden">
+          <img
+            src="https://images.pexels.com/photos/358070/pexels-photo-358070.jpeg?auto=compress&cs=tinysrgb&w=800"
+            alt="Luxury sedan"
+            class="h-48 w-full object-cover"
+            loading="lazy"
+          />
+          <div class="p-4">
+            <h4 class="text-xl font-semibold mb-1">Luxury Sedan</h4>
+            <p class="text-sm mb-2">
+              Comfort and elegance for business travel.
+            </p>
+            <p class="text-blue-700 font-bold">199 €/wk</p>
+          </div>
+        </article>
+
+        <!-- Electric Car -->
+        <article class="bg-white rounded-xl shadow-lg overflow-hidden">
+          <img
+            src="https://images.pexels.com/photos/1149831/pexels-photo-1149831.jpeg?auto=compress&cs=tinysrgb&w=800"
+            alt="Blue electric car"
+            class="h-48 w-full object-cover"
+            loading="lazy"
+          />
+          <div class="p-4">
+            <h4 class="text-xl font-semibold mb-1">Electric Car</h4>
+            <p class="text-sm mb-2">
+              Eco-friendly and quiet with excellent range.
+            </p>
+            <p class="text-blue-700 font-bold">59 €/d</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Video Section -->
+    <section class="bg-blue-50 py-16">
+      <div class="container mx-auto px-6 text-center">
+        <h3 class="text-2xl font-bold text-blue-800 mb-6">
+          How Our Rental Process Works
+        </h3>
+        <p class="max-w-2xl mx-auto mb-6">
+          Watch this short video to see how easy it is to rent a vehicle from
+          DriveEase.
+        </p>
+
+        <video
+          controls
+          preload="metadata"
+          class="mx-auto rounded-xl shadow-lg max-w-3xl"
+          poster="poster.jpg"
+        >
+          <source src="video.mp4" type="video/mp4" />
+          <source src="video.webm" type="video/webm" />
+          <track
+            kind="captions"
+            src="captions.vtt"
+            srclang="en"
+            label="English"
+            default
+          />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-900 text-white py-6 text-center">
+      <p>&copy; 2025 DriveEase Rentals. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
