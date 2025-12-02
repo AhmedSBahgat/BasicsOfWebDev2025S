@@ -17,20 +17,36 @@
 
   <body class="bg-gray-50 text-gray-800 font-['Open_Sans']">
     <!-- Header -->
-    <header class="bg-blue-700 text-white py-6 shadow-md">
-      <div class="container mx-auto text-center">
-        <h1 class="text-3xl font-['Montserrat'] font-semibold">
+    <header class="bg-blue-700 text-white shadow-md">
+      <div
+        class="container mx-auto flex flex-col md:flex-row justify-between items-center py-4 px-6"
+      >
+        <h1
+          class="text-3xl font-['Montserrat'] font-semibold text-center md:text-left"
+        >
           DriveEase Rentals
         </h1>
-        <p class="text-lg mt-2">Your Catalog of Reliable Rental Options</p>
+        <p class="mt-2 md:mt-0 text-center md:text-left">
+          Your Catalog of Reliable Rental Options
+        </p>
 
         <!-- Navigation -->
-        <nav class="mt-3 space-x-6 text-sm">
-          <a href="index.html" class="underline hover:text-yellow-300">Home</a>
-          <a href="catalog.html" class="underline font-bold text-yellow-300"
+        <nav class="mt-4 md:mt-0 flex space-x-3">
+          <a
+            href="index.html"
+            class="px-3 py-1 rounded hover:bg-yellow-300 hover:text-blue-800 transition"
+            >Home</a
+          >
+          <a
+            href="catalog.html"
+            class="px-3 py-1 rounded bg-yellow-300 text-blue-800 font-semibold"
             >Catalog</a
           >
-          <a href="order.html" class="underline hover:text-yellow-300">Order</a>
+          <a
+            href="order.html"
+            class="px-3 py-1 rounded hover:bg-yellow-300 hover:text-blue-800 transition"
+            >Order</a
+          >
         </nav>
       </div>
     </header>
@@ -46,8 +62,8 @@
       <div class="mt-8">
         <img
           src="example.jpg"
-          alt="Decorative catalog header example image"
-          class="mx-auto rounded-xl shadow-lg max-w-md"
+          alt="Decorative catalog header"
+          class="mx-auto rounded-xl shadow-lg max-w-full h-auto"
         />
       </div>
     </section>
@@ -59,7 +75,7 @@
       </h3>
 
       <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
-        <!-- Cars -->
+        <!-- Each car article (same as before, no change needed for images/cards) -->
         <article class="bg-white rounded-xl shadow-lg overflow-hidden">
           <img
             src="https://images.pexels.com/photos/170811/pexels-photo-170811.jpeg?auto=compress&cs=tinysrgb&w=800"
@@ -168,11 +184,10 @@
           Watch this short video to see how easy it is to rent a vehicle from
           DriveEase.
         </p>
-
         <video
           controls
           preload="metadata"
-          class="mx-auto rounded-xl shadow-lg max-w-3xl"
+          class="mx-auto rounded-xl shadow-lg max-w-full h-auto"
           poster="example.jpg"
         >
           <source src="video.mp4" type="video/mp4" />
