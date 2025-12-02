@@ -5,11 +5,11 @@ This folder contains the final version of the DriveEase Rentals website, includi
 ## 📁 Folder Structure
 
 l/  
-├── index.html # Landing page  
-├── catalog.html # Catalog page  
-├── order.html # Order page  
-├── example.jpg # Example image for catalog  
-└── README.md # This file  
+├── index.html    # Landing page  
+├── catalog.html  # Catalog page  
+├── order.html    # Order page  
+├── example.jpg   # Example image for catalog  
+└── README.md     # This file  
 
 ## 🎯 Objective
 
