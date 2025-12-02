@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DriveEase Rentals – Order</title>
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body class="bg-gray-50 text-gray-800 font-['Open_Sans']">
+    <!-- Header -->
+    <header class="bg-blue-700 text-white shadow-md">
+      <div
+        class="container mx-auto flex flex-col md:flex-row justify-between items-center py-4 px-6"
+      >
+        <h1
+          class="text-3xl font-['Montserrat'] font-semibold text-center md:text-left"
+        >
+          DriveEase Rentals
+        </h1>
+        <p class="mt-2 md:mt-0 text-center md:text-left">
+          Book Your Rental in Minutes
+        </p>
+        <nav class="mt-4 md:mt-0 flex space-x-3">
+          <a
+            href="index.html"
+            class="px-3 py-1 rounded hover:bg-yellow-300 hover:text-blue-800 transition"
+            >Home</a
+          >
+          <a
+            href="catalog.html"
+            class="px-3 py-1 rounded hover:bg-yellow-300 hover:text-blue-800 transition"
+            >Catalog</a
+          >
+          <a
+            href="order.html"
+            class="bg-yellow-300 text-blue-800 px-3 py-1 rounded font-semibold"
+            >Order</a
+          >
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- Intro Section -->
+      <section class="container mx-auto px-6 py-12 text-center">
+        <h2 class="text-3xl font-bold text-blue-800 mb-4">Rental Order Form</h2>
+        <p class="max-w-2xl mx-auto text-lg">
+          Fill out the form below to request a rental. Choose your vehicle,
+          rental period, and provide your contact details. Our team will contact
+          you shortly to confirm your booking.
+        </p>
+      </section>
+
+      <!-- Order Form Section -->
+      <section class="container mx-auto px-6 pb-16">
+        <form
+          action="thanks.html"
+          method="POST"
+          class="bg-white shadow-lg rounded-xl p-8 max-w-2xl mx-auto space-y-8"
+        >
+          <!-- Customer Information -->
+          <fieldset class="space-y-4">
+            <legend class="text-xl font-semibold text-blue-800 mb-2">
+              Customer Information
+            </legend>
+            <div>
+              <label for="fullname" class="block font-medium mb-1"
+                >Full Name*</label
+              >
+              <input
+                type="text"
+                id="fullname"
+                name="fullname"
+                required
+                placeholder="Your full name"
+                class="w-full border border-gray-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
+              />
+            </div>
+            <div>
+              <label for="email" class="block font-medium mb-1"
+                >Email Address*</label
+              >
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                placeholder="you@example.com"
+                class="w-full border border-gray-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
+              />
+            </div>
+            <div>
+              <label for="phone" class="block font-medium mb-1"
+                >Phone Number*</label
+              >
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                required
+                placeholder="+1234567890"
+                pattern="[+0-9]{7,15}"
+                class="w-full border border-gray-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
+              />
+            </div>
+          </fieldset>
+
+          <!-- Rental Details -->
+          <fieldset class="space-y-4">
+            <legend class="text-xl font-semibold text-blue-800 mb-2">
+              Rental Details
+            </legend>
+            <div>
+              <label for="item" class="block font-medium mb-1"
+                >Item to Rent*</label
+              >
+              <select
+                id="item"
+                name="item"
+                required
+                class="w-full border border-gray-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
+              >
+                <option value="">-- Select Vehicle --</option>
+                <option value="compact">Compact Car</option>
+                <option value="suv">SUV</option>
+                <option value="sport">Sport Car</option>
+                <option value="van">Passenger Van</option>
+                <option value="luxury">Luxury Sedan</option>
+                <option value="electric">Electric Car</option>
+              </select>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div>
+                <label for="startdate" class="block font-medium mb-1"
+                  >Start Date*</label
+                >
+                <input
+                  type="date"
+                  id="startdate"
+                  name="startdate"
+                  required
+                  min=""
+                  class="w-full border border-gray-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
+                />
+              </div>
+              <div>
+                <label for="enddate" class="block font-medium mb-1"
+                  >End Date*</label
+                >
+                <input
+                  type="date"
+                  id="enddate"
+                  name="enddate"
+                  required
+                  min=""
+                  class="w-full border border-gray-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
+                />
+              </div>
+            </div>
+
+            <div>
+              <label for="quantity" class="block font-medium mb-1"
+                >Quantity*</label
+              >
+              <input
+                type="number"
+                id="quantity"
+                name="quantity"
+                required
+                min="1"
+                max="10"
+                value="1"
+                class="w-full border border-gray-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
+              />
+            </div>
+          </fieldset>
+
+          <!-- Additional Info & Consent -->
+          <fieldset class="space-y-4">
+            <legend class="text-xl font-semibold text-blue-800 mb-2">
+              Additional Information & Consent
+            </legend>
+            <div>
+              <label for="message" class="block font-medium mb-1"
+                >Special Requests</label
+              >
+              <textarea
+                id="message"
+                name="message"
+                rows="4"
+                placeholder="Let us know about any special requests"
+                class="w-full border border-gray-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
+              ></textarea>
+            </div>
+            <div class="flex items-center space-x-2">
+              <input
+                type="checkbox"
+                id="terms"
+                name="terms"
+                required
+                class="w-4 h-4 focus:ring-2 focus:ring-blue-400"
+              />
+              <label for="terms" class="text-sm">
+                I accept the
+                <a href="#" class="underline text-blue-700"
+                  >rental terms and privacy policy</a
+                >*
+              </label>
+            </div>
+            <div class="flex items-center space-x-2">
+              <input
+                type="checkbox"
+                id="newsletter"
+                name="newsletter"
+                class="w-4 h-4 focus:ring-2 focus:ring-blue-400"
+              />
+              <label for="newsletter" class="text-sm"
+                >Subscribe to our newsletter</label
+              >
+            </div>
+          </fieldset>
+
+          <!-- Submit Button -->
+          <button
+            type="submit"
+            class="w-full bg-green-600 text-white font-semibold px-6 py-3 rounded-lg hover:bg-green-500 transition"
+          >
+            Submit Rental Request
+          </button>
+        </form>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-blue-900 text-white py-6 text-center">
+      <p>&copy; 2025 DriveEase Rentals. All rights reserved.</p>
+      <p class="text-sm mt-1">
+        Follow us on
+        <a href="#" class="underline hover:text-yellow-400">Facebook</a> |
+        <a href="#" class="underline hover:text-yellow-400">Instagram</a> |
+        <a href="#" class="underline hover:text-yellow-400">Twitter</a>
+      </p>
+    </footer>
+
+    <!-- Script to set minimum date to today -->
+    <script>
+      const today = new Date().toISOString().split("T")[0];
+      document.getElementById("startdate").setAttribute("min", today);
+      document.getElementById("enddate").setAttribute("min", today);
+    </script>
+  </body>
+</html>
