@@ -87,7 +87,6 @@ https://ahmedsbahgat.github.io/BasicsOfWebDev2025S/task-l/
 
 - All internal links use **relative paths**.
 - Images are included locally where possible (`example.jpg`), other images use external links.
-- Form submissions point to `thanks.html` (to be implemented if needed).
 - All pages have been validated for HTML correctness using [W3C Validator](https://validator.w3.org/).
 
 ---
